@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import { dir } from "i18next";
 import { languages } from "@/app/i18n/settings";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,9 @@ export default function RootLayout({
   return (
     <React.StrictMode>
       <html lang={language} dir={dir(language)}>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <AntdRegistry>{children}</AntdRegistry>
+        </body>
       </html>
     </React.StrictMode>
   );

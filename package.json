@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.0",
     "accept-language": "^3.0.18",
+    "antd": "^5.16.1",
     "bowser": "^2.11.0",
     "i18next": "^23.10.1",
     "i18next-browser-languagedetector": "^7.2.1",
